@@ -15,7 +15,7 @@ body { font-family: 'Segoe UI', Tahoma, sans-serif; color: #333; background: #f4
 .hero .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0,0,0,0.5);
 }
 .hero-content {
   position: relative;
@@ -54,14 +54,34 @@ body { font-family: 'Segoe UI', Tahoma, sans-serif; color: #333; background: #f4
   text-align: center;
 }
 .item img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   margin: 0 auto 0.75rem;
   border-radius: 50%;
 }
 .item h3 { margin-bottom: 0.5rem; font-size: 1.1rem; color: #333; }
 .item p { font-size: 0.95rem; color: #555; }
+
+/* Stats */
+.stats { padding: 3rem 1rem; background: #f9fbfd; }
+.stats h2 { text-align: center; margin-bottom: 2rem; font-size: 1.75rem; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.stat-item {
+  background: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.stat-item strong { display: block; font-size: 2rem; color: #ff6a00; }
+.stat-item span { font-size: 0.95rem; color: #555; }
 
 /* Testimonials */
 .testimonials { padding: 3rem 1rem; background: #e8f5fe; }
@@ -84,6 +104,13 @@ body { font-family: 'Segoe UI', Tahoma, sans-serif; color: #333; background: #f4
 .card p { font-style: italic; color: #555; margin-bottom: 1rem; }
 .card footer { text-align: right; font-size: 0.9rem; color: #333; }
 
+/* FAQ */
+.faq { padding: 3rem 1rem; background: #fff; }
+.faq h2 { text-align: center; margin-bottom: 2rem; font-size: 1.75rem; }
+.faq dl { max-width: 600px; margin: 0 auto; }
+.faq dt { font-weight: bold; margin-top: 1rem; }
+.faq dd { margin-left: 1rem; margin-bottom: 0.75rem; color: #555; }
+
 /* Footer */
 footer {
   text-align: center;
@@ -92,4 +119,4 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
-.disclosure { margin-bottom: 1rem; }
+footer .disclosure { margin-bottom: 1rem; }
